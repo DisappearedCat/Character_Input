@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import datetime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print("Hi! " + name)
+
+    now = datetime.datetime.now()
+    years_to_hundred = 100 - age
+    print("You will turn 100 years old in " + str(now.year + years_to_hundred) + " year")
